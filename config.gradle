@@ -2,10 +2,10 @@ ext {
     android = [
             compileSdkVersion       : 26,
             buildToolsVersion       : "26.0.2",
-            minSdkVersion           : 15,
+            minSdkVersion           : 17,
             targetSdkVersion        : 26,
-            versionCode             : 146,
-            versionName             : "2.3.1"
+            versionCode             : 1,
+            versionName             : "1.0.0"
     ]
 
     version = [
@@ -28,6 +28,11 @@ ext {
             "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
             "annotations"              : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
             "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+
+            "percent"                   : "com.android.support:percent:${version["androidSupportSdkVersion"]}",
+
+            "constraint-layout"         : "com.android.support.constraint:constraint-layout:1.0.2",
+
 
             //network
             "retrofit"                 : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
