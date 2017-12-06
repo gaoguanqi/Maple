@@ -49,4 +49,5 @@ dependencies {
     //百分比布局
     implementation rootProject.ext.dependencies["percent"]
     implementation project(':baselibrary')
+    implementation project(':commonlibrary')
 }
