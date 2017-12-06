@@ -1,4 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//因为在顶级build.gradle中引用了它,所以在整个项目的所有build.gradle中都可以使用rootProject.xxx来使用它里面的内容
+apply from: "config.gradle" //这里表示引用config.gradle文件
 
 buildscript {
     
