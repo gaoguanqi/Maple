@@ -10,6 +10,22 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        debug {
+            storeFile file('keystore/MapleKeyStore.jks')
+            storePassword "gaoguanqi"
+            keyAlias "Maple"
+            keyPassword "gaoguanqi"
+        }
+        release {
+            storeFile file('keystore/MapleKeyStore.jks')
+            storePassword "gaoguanqi"
+            keyAlias "Maple"
+            keyPassword "gaoguanqi"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
