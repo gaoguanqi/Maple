@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation rootProject.ext.dependencies["appcompat-v7"]
     //约束布局
     implementation rootProject.ext.dependencies["constraint-layout"]
@@ -48,5 +48,5 @@ dependencies {
     implementation rootProject.ext.dependencies["recyclerview-v7"]
     //百分比布局
     implementation rootProject.ext.dependencies["percent"]
-
+    implementation project(':baselibrary')
 }
