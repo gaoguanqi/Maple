@@ -48,6 +48,18 @@ dependencies {
     implementation rootProject.ext.dependencies["recyclerview-v7"]
     //百分比布局
     implementation rootProject.ext.dependencies["percent"]
+
+    //butterknife
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+
+
+
+
+
+    //-------------------------
     implementation project(':baselibrary')
     implementation project(':commonlibrary')
+
 }
