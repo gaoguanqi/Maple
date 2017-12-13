@@ -8,7 +8,7 @@ import retrofit2.http.Field;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface SyncServerService {
+public interface ApiService {
 
 	@GET("mobile/version?a=version")  //com.bskj.healthymall
 	Observable<Response<String>> updateVersion (@Query("packname") String packname);

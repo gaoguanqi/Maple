@@ -2,7 +2,7 @@ package com.maple.smaple.commonlibrary.retrofit;
 
 
 
-import com.maple.smaple.commonlibrary.retrofit.ApiService.SyncServerService;
+import com.maple.smaple.commonlibrary.retrofit.ApiService.ApiService;
 import com.maple.smaple.commonlibrary.retrofit.Converter.FastJsonConverterFactory;
 
 import java.util.HashMap;
@@ -48,8 +48,8 @@ public class RxHttp {
 		return retrofit;
 	}
 
-	public SyncServerService getSyncServer(){
-		return getRetrofit(BASE_URL).create(SyncServerService.class);
+	public ApiService getSyncServer(){
+		return getRetrofit(BASE_URL).create(ApiService.class);
 	}
 
 
